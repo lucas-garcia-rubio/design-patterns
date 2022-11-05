@@ -1,19 +1,17 @@
-package factory
+package factory.creators
 
-import factory.Creator
-import factory.characters.duelists.*
+import factory.characters.healers.*
 import factory.traits.BaseCharacter
 
-class DuelistCreator extends Creator {
+class HealerCreator extends Creator{
 
   override def createCharacter(name: String): BaseCharacter = name match {
-    case "Jett"   => Jett()
-    case "Reyna"  => Reyna()
+    case "Sage" => Sage()
   }
 
   override def respawnCharacter(name: String): BaseCharacter = {
     val character = createCharacter(name)
-    println(s"${character.name} joined to kill some newbies!")
+    println(s"Say hi to ${character.name}, your healer!")
     character
   }
 

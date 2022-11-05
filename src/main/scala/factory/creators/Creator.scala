@@ -1,5 +1,5 @@
 // A classe Creator cria os objetos da fábrica
-package factory
+package factory.creators
 
 import factory.traits.BaseCharacter
 

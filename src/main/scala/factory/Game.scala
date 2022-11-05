@@ -1,6 +1,6 @@
 package factory
 
-import factory.{DuelistCreator, HealerCreator}
+import factory.creators.{DuelistCreator, HealerCreator}
 
 @main def game(): Unit = {
 
